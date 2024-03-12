@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 int main(void) {
-  printf("Count Even (Arrays) : \n\n");
+  printf("Count Even & Odd (Arrays) : \n\n");
 
-  int a[10], i, sum = 0, product = 0;
+  int a[10], i, sum = 0, product = 1;
   int countEven = 0;
   int countOdd = 0;
 
@@ -26,22 +26,22 @@ int main(void) {
       countOdd++;
     }
   }
-  printf("\nTotal Even : %d", countEven);
-  printf("\nTotal Odd : %d", countOdd);
+  printf("\nTotal Even : %d\n", countEven);
+  printf("Total Odd : %d\n", countOdd);
 
 
   for(int i = 0; i < 10; i++) {
     if(a[i] % 2 == 0) {
-      sum = a[i] + a[i];
+      sum += a[i];
 
     } else if(a[i] % 2 != 0) {
-      product = a[i] * a[i];
+      product *= a[i];
     }
   }
 
-  printf("\n\nSum of Even : %d", sum);
-  printf("\nProduct of Odd : %d", product);
+  printf("\nSum of Even : %d\n", sum);
+  printf("Product of Odd : %d\n", product);
 
-  printf("\n\nThank You :) \n");
+  printf("\nThank You :) \n");
   return 0;
 }
