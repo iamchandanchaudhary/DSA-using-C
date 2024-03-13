@@ -10,7 +10,7 @@ int main(void) {
 
   // if Equal ==> 0
   // positive(+) ==> first > second (ASCII)
-  // negative(-) ==> second < first (ASCII)
+  // negative(-) ==> second > first (ASCII)
   
   printf("Comparison : %d\n", strcmp(firstText, secondText));
 
